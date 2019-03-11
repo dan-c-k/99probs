@@ -19,10 +19,6 @@ tree65 = Branch 'n'
                         Empty
                 )
 
-countDescendants :: Tree a -> Int
-countDescendants Empty = 0
-countDescendants (Branch a b1 b2) = 1 + countDescendants b1 + countDescendants b2
-
 maxDepth :: Tree a -> Int
 maxDepth Empty = 0
 maxDepth (Branch a Empty Empty) = 1
